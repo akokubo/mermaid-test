@@ -1,10 +1,4 @@
----
-marp: true
----
-<!-- 上記はMarpと認識させるために必要な記述 -->
-
-<!-- preタグ内にMermaid記法で出力したい図のコードを書く -->
-<pre class="mermaid">
+```mermaid
 gantt
     title ○○サービススケジュール
     dateFormat  YYYY-MM-DD
@@ -23,10 +17,4 @@ gantt
         ××機能テスト  : c2, 2023-02-01, 7d
         ○○機能テスト  : c3, after c2, 10d
         △△機能テスト  : c4, after c3, 5d
-
-</pre>
-
-<script src="https://cdn.jsdelivr.net/npm/mermaid@9"></script>
-<script>
-    mermaid.initialize({startOnLoad: true});
-</script>
+```
